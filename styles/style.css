@@ -18,7 +18,7 @@ body {
 }
 
 body > * {
-  padding: 0 20%;
+  padding: 2em 20%;
 }
 
 .header {
@@ -132,7 +132,7 @@ button.normal {
   font-size: 36px;
   font-weight: 300;
   font-style: italic;
-  padding: 0 30%;
+  padding: 2em 25%;
 }
 
 .quote-area > p {
@@ -144,14 +144,37 @@ button.normal {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 4em 2em;
 }
 
 .sign-up-inner {
   background-color: #3882f6;
   display: flex;
+  border-radius: 10px;
+  color: #e5e7eb;
+  padding: 2em;
+  flex-basis: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sign-up-inner h3,
+.sign-up-inner p {
+  margin: 0;
+}
+
+button.inverted {
+  padding: 0.5em 2em;
+  border: 1px solid #e5e7eb;
+  background-color: #3882f6;
+  color: #e5e7eb;
+  border-radius: 5px;
 }
 
 .footer {
   background-color: #1f2937;
   color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
