@@ -17,16 +17,26 @@ body {
   font-family: Roboto, Arial, sans-serif;
 }
 
+body > * {
+  padding: 0 20%;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #1f2937;
+}
+
+.header > div {
   color: #f9faf8;
   font-size: 24px;
+  font-weight: bold;
 }
 
 .header ul {
   display: flex;
+  gap: 1em;
   list-style: none;
   color: #e5e7eb;
   font-size: 18px;
@@ -41,31 +51,43 @@ body {
   display: flex;
   background-color: #1f2937;
   color: #e5e7eb;
+  padding-bottom: 4em;
+  gap: 4em;
 }
 
 .splash-card {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 50%;
 }
 
 .splash-card-title {
   font-size: 48px;
   color: #f9faf8;
   font-weight: 900;
+  margin-bottom: 0;
 }
 
 .splash-card p {
   color: #e5e7eb;
+  font-size: 18px;
 }
 
 button.normal {
   background-color: #3882f6;
   color: inherit;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 2em;
 }
 
 .splash-img {
   background-color: #6d747e;
-  width: 420px;
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .info-box-outer {
@@ -126,5 +148,5 @@ button.normal {
 
 .footer {
   background-color: #1f2937;
-  color: #e5e7eb
+  color: #e5e7eb;
 }
